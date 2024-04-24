@@ -5,7 +5,7 @@
 	<title>Цены на электромонтажные работы</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240424121524">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240424141548">
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -33,6 +33,7 @@
 				<div class="top-header__container">
 					<a class="top-header__logo" href="index.html">
 						<picture><source srcset="img/logo.webp" type="image/webp"><img class="logo" src="img/logo.png" alt="частный мастер" alt="Мастер" title="Частный мастер в Могилеве" /></picture>
+						<picture><source srcset="img/logo-mobile.webp" type="image/webp"><img class="logo__mobile" src="img/logo-mobile.png" alt="частный мастер" alt="Мастер" title="Частный мастер в Могилеве" /></picture>
 					</a>
 					<div class="top-header__actions actions-header">
 						<div class="actions-header__schedule">
@@ -942,12 +943,14 @@
 					<div class="form__field"><textarea data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Ваше сообщение *" name="form[]" class="form__control"></textarea>
 					</div>
 				</div>
-				<div class="form__checkbox checkbox">
-					<input id="agree" data-error="Ошибка" class="checkbox__input" type="checkbox" checked>
-					<label for="agree" aria-label="Я согласен(сна) на обработку персональных данных." class="checkbox__label">
-						<div class="checkbox__text">Я согласен(сна) на обработку персональных
-							данных в соответствии с
-					</label><span class="form__popup" data-popup="#oferta">Условиями*</span>
+				<div class="form__send">
+					<div class="form__checkbox checkbox">
+						<input id="agree" data-error="Ошибка" class="checkbox__input" type="checkbox" checked>
+						<label for="agree" aria-label="Я согласен(сна) на обработку персональных данных." class="checkbox__label">
+							<div class="checkbox__text">Я согласен(сна) на обработку персональных
+								данных в соответствии с
+						</label><span class="form__popup" data-popup="#oferta">Условиями*</span>
+					</div>
 				</div>
 				<button type="submit" class="form__btn button">Отправить</button>
 			</form>
@@ -1020,7 +1023,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240424121524"></script>
+	<script src="js/app.min.js?_v=20240424141548"></script>
 </body>
 
 </html>
