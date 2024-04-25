@@ -3174,8 +3174,8 @@
         const cervices = document.querySelectorAll(".list__grouped");
         const agreement = document.getElementById("agree");
         const metaTags = document.head.getElementsByTagName("meta");
+        const titleMain = document.querySelector("h1");
         if (cervices.length) {
-            const titleMain = document.querySelector("h1");
             const breadcrubmsCurrent = document.querySelector(".breadcrumbs__current");
             const breadcrubmsSubCurrent = document.querySelector(".breadcrumbs__sub-link");
             for (let cervice of cervices) if (cervice.firstElementChild.firstElementChild.title.toLowerCase().replaceAll(/\s+/g, "") === titleMain.textContent.toLowerCase().replaceAll(" ", "")) {
