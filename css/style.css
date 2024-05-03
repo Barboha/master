@@ -861,6 +861,7 @@ body::after {
 
 .usluga__text a {
   color: #37729e;
+  font-weight: 600;
   -webkit-transition: color 0.5s ease 0s;
   transition: color 0.5s ease 0s;
 }
@@ -912,6 +913,7 @@ body::after {
 }
 
 .usluga__text-serv {
+  font-weight: 600;
   margin-bottom: 0.3125rem;
   line-height: 1.5;
   color: #37729e;
@@ -1019,6 +1021,7 @@ body::after {
 }
 
 .price {
+  font-weight: 500;
   text-wrap: nowrap;
 }
 
