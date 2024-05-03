@@ -945,7 +945,6 @@ body::after {
           justify-content: start;
   cursor: pointer;
   background-color: rgba(55, 114, 158, 0.5);
-  margin-bottom: 0.3125rem;
   padding-left: 0.625rem;
 }
 
@@ -973,7 +972,20 @@ body::after {
   }
 }
 
+@supports (margin-bottom: clamp( 0.3125rem , 0.2215909091rem  +  0.4545454545vw , 0.5625rem )) {
+  .cervices__title {
+    margin-bottom: clamp( 0.3125rem , 0.2215909091rem  +  0.4545454545vw , 0.5625rem );
+  }
+}
+
+@supports not (margin-bottom: clamp( 0.3125rem , 0.2215909091rem  +  0.4545454545vw , 0.5625rem )) {
+  .cervices__title {
+    margin-bottom: calc(0.3125rem + 0.25 * (100vw - 20rem) / 55);
+  }
+}
+
 .cervices__price {
+  font-weight: 500;
   min-width: 3.125rem;
 }
 
